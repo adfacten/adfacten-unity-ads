@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Native dependencies of the Adfacten Ads Unity plugin, read by the External Dependency Manager for Unity (EDM4U).
+
+  Android: the core SDK from the Adfacten Maven repository. The optional artifacts
+    com.adfacten:ads-video:1.0.2  (VAST video for interstitial and rewarded, minimum API level 23)
+    com.adfacten:ads-gaid:1.0.2   (advertising ID and App Set ID, adds the AD_ID permission)
+  are switched on in Project Settings > Adfacten, which writes them to
+  Assets/Adfacten/Editor/AdfactenOptionalDependencies.xml.
+
+  iOS: AdfactenAds is not on the CocoaPods trunk. EDM4U writes this pod to the Podfile, and the plugin's
+  post-build step (order 45, between Podfile generation and pod install) points it at the source podspec:
+    pod 'AdfactenAds', :git => 'https://github.com/adfacten/adfacten-ios-sdk.git', :tag => '1.0.2'
+  With "iOS dependency: XCFramework" in Project Settings > Adfacten the line is removed and the prebuilt
+  XCFramework is embedded instead.
+-->
+<dependencies>
+  <androidPackages>
+    <repositories>
+      <repository>https://cdn.adfacten.com/maven/</repository>
+    </repositories>
+    <androidPackage spec="com.adfacten:ads:1.0.2" />
+  </androidPackages>
+  <iosPods>
+    <iosPod name="AdfactenAds" version="1.0.2" minTargetSdk="15.0" addToAllTargets="false" />
+  </iosPods>
+</dependencies>

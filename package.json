@@ -1,0 +1,32 @@
+{
+  "name": "com.adfacten.ads",
+  "version": "1.0.0",
+  "displayName": "Adfacten Ads",
+  "description": "Banner, interstitial, rewarded, app-open and native ads from the Adfacten network for Android and iOS. Wraps the native Adfacten SDKs 1.0.2; the Editor shows placeholder ads.",
+  "unity": "2021.3",
+  "license": "Apache-2.0",
+  "keywords": [
+    "ads",
+    "advertising",
+    "monetization",
+    "rewarded",
+    "interstitial",
+    "banner",
+    "adfacten"
+  ],
+  "author": {
+    "name": "Adfacten",
+    "email": "destek@adfacten.com",
+    "url": "https://adfacten.com"
+  },
+  "documentationUrl": "https://github.com/adfacten/adfacten-unity-ads#readme",
+  "changelogUrl": "https://github.com/adfacten/adfacten-unity-ads/blob/1.0.0/CHANGELOG.md",
+  "licensesUrl": "https://github.com/adfacten/adfacten-unity-ads/blob/1.0.0/LICENSE",
+  "samples": [
+    {
+      "displayName": "Demo",
+      "description": "A scene that shows every ad format with Adfacten's public test apps (unbilled test ads). Set the bundle id to com.adfacten.sample.",
+      "path": "Samples~/Demo"
+    }
+  ]
+}
